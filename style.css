@@ -133,7 +133,7 @@
 .cover:hover::after {
   content: "";
   width: 295px;
-  height: 446px;
+  height: 301px;
   position: absolute;
   top: 0;
   left: 0;
