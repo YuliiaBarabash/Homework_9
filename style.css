@@ -13,6 +13,9 @@ body ul {
   list-style: none;
 }
 
+body img {
+  width: 100%;
+}
 
 .header,
 .footer {
@@ -135,10 +138,6 @@ body ul {
   width: 294px;
   height: 301px;
   overflow: hidden;
-}
-
-img {
-  width: 100%;
 }
 
 .product-item:hover::after {
