@@ -2,12 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
 }
 
-.page {
+body {
+  font-family: "Open Sans", sans-serif;
   background-color: #e5e5e5;
 }
+
+body ul {
+  list-style: none;
+}
+
 
 .header,
 .footer {
@@ -17,6 +22,7 @@
 }
 .container {
   width: 1025px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -24,6 +30,7 @@
 }
 
 .logo {
+  display: block;
   width: 90px;
   height: 55px;
 }
@@ -130,7 +137,11 @@
   overflow: hidden;
 }
 
-.cover:hover::after {
+img {
+  width: 100%;
+}
+
+.product-item:hover::after {
   content: "";
   width: 295px;
   height: 301px;
@@ -151,24 +162,21 @@
 .product-name {
   font-size: 24px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .product-type {
   color: #898989;
-}
-
-.product-name,
-.product-type {
   margin-bottom: 8px;
 }
 
-.price-flex {
+.price {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.price {
+.new-price {
   margin-right: 16px;
   font-weight: 600;
   font-size: 20px;
@@ -190,14 +198,7 @@
   text-decoration: line-through;
 }
 
-.nav-menu {
-  margin: 23px 0 25px 0;
-}
-
 .menu {
-  min-width: 423px;
-  height: 22px;
-  list-style: none;
   display: flex;
 }
 
@@ -219,9 +220,12 @@
 }
 
 .social {
-  list-style: none;
   display: flex;
   align-items: center;
+}
+
+.social li {
+  margin-right: 11px;
 }
 
 .icon {
@@ -236,7 +240,6 @@
 
 .social svg {
   cursor: pointer;
-  margin-right: 11px;
   stroke: #000;
 }
 
