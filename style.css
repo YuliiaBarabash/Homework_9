@@ -9,11 +9,11 @@ body {
   background-color: #e5e5e5;
 }
 
-body ul {
+ul {
   list-style: none;
 }
 
-body img {
+img {
   width: 100%;
 }
 
@@ -75,7 +75,7 @@ body img {
 
 .main {
   width: 100%;
-  padding: 64px 0 115px 0;
+  padding: 64px 0 115px;
 }
 
 .product-list {
@@ -94,44 +94,37 @@ body img {
 }
 
 .discount {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 48px;
-  height: 48px;
   background-color: #fa676c;
-  border-radius: 50%;
-  color: #fff;
   line-height: 1.5;
   text-align: center;
   padding: 12px 4px 12px 5px;
 }
 
-.new {
+.label {
+  content: '';
   position: absolute;
   top: 24px;
   right: 24px;
   width: 48px;
   height: 48px;
-  background-color: #00c4ab;
   border-radius: 50%;
   color: #fff;
+  z-index: 1;
+}
+
+.new {
+  background-color: #00c4ab;
   line-height: 1.5;
   padding: 12px 8px;
 }
 
 .favourite {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 48px;
-  height: 48px;
   background-color: #ead836;
   border-radius: 50%;
   color: #fff;
   font-size: 30px;
   line-height: 0.9;
-  padding: 9px 9px;
+  padding: 9px;
 }
 
 .product-img {
@@ -140,8 +133,8 @@ body img {
   overflow: hidden;
 }
 
-.product-item:hover::after {
-  content: "";
+.product-item:hover .product-img::after {
+  content: '';
   width: 295px;
   height: 301px;
   position: absolute;
@@ -223,7 +216,7 @@ body img {
   align-items: center;
 }
 
-.social li {
+.social li:not(:last-child) {
   margin-right: 11px;
 }
 
